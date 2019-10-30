@@ -19,11 +19,11 @@ title: HostPerformer
             <div class="feature-row__content" style="padding-bottom: 300px;">
                 <div class="feature-row__content-dec"></div>
                 <div class="feature-row__title">
-                    <label class="sub-section-label">Title here</label>
+                    <!--<label class="sub-section-label">Title here</label>-->
                     <h2>Apply to be a host or a performer</h2>
                 </div>
                 <p>
-                    Description here
+                    Experience something truly unique by applying to work with us as a host or a performer.
                 </p>
                 <h2>Are you a host or a performer?</h2>
                 <form accept-charset="UTF-8" name="submit-to-google-sheet" id="submit-to-google-sheet"> 
@@ -55,19 +55,21 @@ title: HostPerformer
                         <div class="row" id="contact">
                             <div class="col-md-12">
                                 <label>Contact info:</label><br/>
-                                <input type="email" name="email" placeholder="Email" /> or <input type="tel" name="phone number" placeholder="Phone Number" title="Please enter only numbers" pattern="[0-9]+">
-                            </div>
-                        </div>
-                        <div class="row" id="host"> 
-                            <div class="col-md-12">
-                                <label>Host Resume: </label><br/>
-                                <input name="resume" id="resume" type="file" disabled="true" class="host">
+                                <input type="email" name="email" placeholder="Email" /> or <input type="tel" name="phone number" placeholder="Phone Number" title="Please enter only numbers" pattern="[0-9]+" >
                             </div>
                         </div>
                         <div class="row" id="performer">
                             <div class="col-md-12">
                                 <label>Link to performance: </label><br/>
-                                <textarea name="performance" id="performance" class="performer" rows="1" cols="50" disabled="true"></textarea>
+                                <textarea name="performance" id="performance" class="performer" rows="1" cols="50" disabled required></textarea>
+                                <!--<textarea name="comments" id="comment" rows="1" cols="50" spellcheck="true"></textarea>-->
+                            </div>
+                        </div>
+                        <div class="row" id="host"> 
+                            <div class="col-md-12">
+                                <label>Host Resume: </label><br/>
+                                <div id="data"></div>
+                                <input name="resume" id="resume" type="file" class="host" oninput="this.className=''" disabled required >
                             </div>
                         </div>
                         <br/>
