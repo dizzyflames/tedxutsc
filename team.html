@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Team
-team:
+past-team:
   - title: Leads
     members:
       - name: Sakina Gadriwala
@@ -107,6 +107,26 @@ team:
       - name: Sarah Quershi
         position: Productions - Technical
         image: assets/team/sarah.jpeg
+current-team:
+  - title: 2020 Executive Team
+    members:
+      - name: Aaheli Mukherjee
+        position: Chair
+        image: assets/team/Aaheli.jpg
+      - name: Joely Ho
+        position: Lead of Marketing and Communications
+        image: assets/team/Joely.jpg
+      - name: Rohma Falak
+        position: Lead of Conference Development
+        image: assets/team/Rohma.jpg
+      - name: Shile Adeyoyin
+        position: Lead of Program Development
+        image: assets/team/Shile.jpg
+  - title: 2020 Directorial Team
+    members:
+  - title: 2020 Associate Team
+    members:
+  - title: 2020 Team Video
 ---
 
 
@@ -150,18 +170,18 @@ team:
 
 <section class="team">
     <div class="container">
-        <label class="team__sub-section">MEET OUR 2020 TEAM</label>
-        {% for section in page.team %}
-        <h2 class="team__label">{{ section.title }}</h2>
+        <!--<label class="team__sub-section">MEET OUR 2020 TEAM</label>-->
+        {% for section in page.current-team %}
+        <div class="team__label"><h2 class="team__label_underline">{{ section.title }}</h2></div>
         <div class="row">
             {% for member in section.members %}
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="team__member-item">
                     <img src="{{ member.image }}" class="team__picture"/>
-                    <div class="team__name-gradient">
-                        <label class="team__member-name">{{ member.name }}</label>
-                        <label class="team__member-position">{{ member.position }}</label>
-                    </div>
+                </div>
+                <div class="team__name-center">
+                  <label class="team__member-name">{{ member.name }}</label>
+                  <label class="team__member-position">{{ member.position }}</label>
                 </div>
             </div>
             {% endfor %}

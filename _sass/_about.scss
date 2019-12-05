@@ -5,7 +5,8 @@
 
 
 .team{
-  background-color: white;
+  background-color: black;
+  color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../../assets/wave-black.svg);
@@ -18,9 +19,13 @@
     font-family: $libre-font;
     font-size: 40px;
     font-weight: bold;
-    align-self: left;
+    text-align: center;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
+  }
+  &__label_underline {
+    display: inline;
+    border-bottom: solid red;
   }
   &__sub-section{
     font-family: $primary-font;
@@ -41,7 +46,7 @@
   }
   &__member-item {
     position: relative;
-    margin: 10px;
+    margin: 15px;
     transition: all ease 0.3s;
     &:hover {
       transform: scale(1.2);
@@ -54,17 +59,18 @@
     bottom: 20px;
     font-family: $primary-font;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 13px;
     letter-spacing: 2px;
     color: white;
+    font-weight: bold;
     text-transform: uppercase;
   }
   &__member-position{
     display: block;
     font-family: $libre-font;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
     letter-spacing: 1px;
     padding-top: 5px;
@@ -83,6 +89,12 @@
     bottom: 0;
     left: 0;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 11%, black 47%, black 65%, black 92%, black 96%);
+  }
+  &__name-center{
+    padding: 20px;
+    padding-bottom: 15px;
+    height: auto;
+    text-align: center;
   }
   &__section2{
     background-color: white;
