@@ -1,7 +1,7 @@
 .footer {
     background-color: black;
-    padding-top: 4 * $spacing-unit;
-    padding-bottom: 4 * $spacing-unit;
+   // padding-top: 4 * $spacing-unit;
+    //padding-bottom: 4 * $spacing-unit;
     color: white;
     font-family: $primary-font;
     .container {
@@ -19,6 +19,7 @@
         display: flex;
         padding-top: 20px;
         padding-bottom: 10px;
+        justify-content: center;
         ul {
             flex: 0.5;
             margin: 0;
@@ -33,7 +34,7 @@
     &__copyright {
         flex: 0.5;
         font-size: 13px;
-        text-align: right;
+        text-align: center;
         opacity: 0.5;
         // Invisible env and build number label
         small {
