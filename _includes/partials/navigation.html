@@ -20,10 +20,13 @@
             <li class="nav-item {% if page.title == 'Speakers' %} active {% endif %}">
                     <a class="nav-link" href="{{ site.baseurl }}/speakers.html">Speakers</a>
                 </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/host-performer-application.html">Applications</a>
+            <li class="nav-item  {% if page.title == 'Application' %} active {% endif %}">
+                <a class="nav-link" href="{{ site.baseurl }}/applications.html">Applications</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item  {% if page.title == 'Sponsor' %} active {% endif %}">
+                <a class="nav-link" href="{{ site.baseurl }}/sponsors.html">Sponsors</a>
+            </li>
+            <li class="nav-item  {% if page.title == 'Contact' %} active {% endif %}">
                 <a class="nav-link" href="{{ site.baseurl }}/contact.html">Contact Us</a>
             </li>
             <li class="nav-item">
