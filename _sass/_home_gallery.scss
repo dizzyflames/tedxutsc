@@ -13,6 +13,9 @@
     &__content {
       flex:1 1 auto;
     }
+    &__text {
+      border-bottom: solid red;
+    }
     &__left-btn,
     &__right-btn {
       background-color: black;

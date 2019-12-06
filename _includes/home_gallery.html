@@ -2,25 +2,9 @@
     <div class="container">
         <div class="home-gallery__title">
             <button onClick="previousGalleryItem()" class="home-gallery__title__left-btn"></button>
-            <div class="home-gallery__title__content">Our past Speakers</div>
+            <div class="home-gallery__title__content"><label class="home-gallery__title__text">2020 Speakers to be announced shortly</label></div>
             <button onClick="nextGalleryItem()" class="home-gallery__title__right-btn"></button>
         </div>
         <br/>
-        <ul class="home-gallery__items">
-            {% for item in page.gallery %}
-            <li class="home-gallery__items__item">
-                <img class="home-gallery__items__item__img" src="{{ item.img }}" alt="{{ item.speaker }}"/>
-                <div class="home-gallery__items__item__label">
-                    <small>{{ item.title }}</small>
-                    {{ item.speaker }}
-                </div>
-            </li>
-            {% endfor %}
-            <a href="{{ site.baseurl }}/pastSpeakers.html" class="home-gallery__items__item nav-link red">
-                <div class="home-gallery__items__item__label">
-                    More Speakers 
-                </div>
-            </a>
-        </ul>
     </div>
 </div>
