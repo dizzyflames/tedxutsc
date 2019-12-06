@@ -75,11 +75,9 @@ team:
 
 <header class="home__header__about">
     <div class="feature-row feature-row--right">
-        <div class="container">
-            <label style="color: white; border-bottom: solid red; font-size: 20px;">All Speaker Applications have closed</p></label>
-            
+        <div class="container" style="text-align: center;">
+            <label style="color: white; border-bottom: solid red; font-size: 20px;">All Speaker Applications have closed</label>
         </div>
-        <img class="feature-row--right__image" src="assets/speaker-header.jpeg"/>
     </div>
 </header>
 
@@ -99,13 +97,6 @@ team:
                 </div>
             </div>
             {% endfor %}
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <a href="{{ site.baseurl }}/pastSpeakers.html" class="team__member-item nav-link" style="margin-top: 40px; cursor: pointer; height: 361px; background-color: #EC3523" >
-                    <div class="team__name-gradient">
-                        <div class="team_member-position" style="color: white; text-align: center;">More Speakers</div>
-                    </div>
-                </a>
-            </div>
         </div>
         <br/><br/>
         {% endfor %}
