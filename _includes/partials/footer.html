@@ -33,9 +33,32 @@
                         <li><a href="{{ site.baseurl }}/contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
+                <div class="footer__contact">
+                    <h5 class="footer__mailing-list">JOIN OUR MAILING LIST</h5>
+                </div>
+            </div>
+            <div class="footer__mailing-list-items">
+                <form accept-charset="UTF-8">
+                    <div class="row" >
+                        <div class="col">
+                                <input type="text" name="first name" placeholder="first name" size="20" class="form-control" disabled>
+                        </div>
+                        <div class="col">
+                                <input type="text" name="last name" placeholder="last name" size="20" class="form-control" disabled>
+                        </div>
+                        <div class="col">
+                                <input type="email" name="email" placeholder="email" size="20" class="form-control" disabled>
+                        </div>   
+                    </div>
+                    <div style="text-align: center;">
+                        <input type="submit" name="submit" class="btn btn-primary" disabled>
+                    </div>  
+                </form>
+            </div>
+            <div class="col-lg-5">
                 <div class="footer__copyright">
                     <small>{{ site.env }} {{ site.build }}</small>
-                    &copy; TEDXUTSC 2018
+                        &copy; TEDXUTSC 2018
                 </div>
             </div>
         </div>

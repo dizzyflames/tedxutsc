@@ -62,6 +62,14 @@
             }
         }
     }
+    &__mailing-list{
+        border-bottom: solid red;
+    }
+    &__mailing-list-items div {
+        input {
+            margin: 10px;
+        }
+    }
 }
 
 @include media-query($on-palm) {
