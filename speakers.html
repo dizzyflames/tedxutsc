@@ -147,28 +147,29 @@ team:
             Arshiya is a Toronto based dancer, choreographer and the founder of her Fitness class called Belly AB Fitness. Her goal is to inspire people through the medium of dance and her fitness classes, and she will be speaking about what it means to take care of oneself, and how one's mind and body should be reflected through a spiritual medium.
 ---
 
-
-<section class="team team-speakers">
-    <div class="container">
-        <h1> Our 2020 Speakers</h1>
-        {% for section in page.speakers %}
-        <div class="row">
-            {% for member in section.members %}
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="team__member-item" style="margin-top: 40px; cursor: pointer;" data-toggle="modal" data-target="#{{member.id}}-speaker-modal">
-                    <img src="{{ member.image }}" class="team__picture"/>
-                    <div class="team__name-gradient">
-                        <label class="team__member-name">{{ member.name }}</label>
-                        <label class="team__member-position">{{ member.position }}</label>
+<div class="feature-row feature-row--right" style="padding-top: 50px;">
+    <section class="team team-speakers">
+        <div class="container">
+            <h1> Our 2020 Speakers</h1>
+            {% for section in page.speakers %}
+            <div class="row">
+                {% for member in section.members %}
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="team__member-item" style="margin-top: 40px; cursor: pointer;" data-toggle="modal" data-target="#{{member.id}}-speaker-modal">
+                        <img src="{{ member.image }}" class="team__picture"/>
+                        <div class="team__name-gradient">
+                            <label class="team__member-name">{{ member.name }}</label>
+                            <label class="team__member-position">{{ member.position }}</label>
+                        </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
+            <br/><br/>
             {% endfor %}
         </div>
-        <br/><br/>
-        {% endfor %}
-    </div>
-</section>
+    </section>
+</div>
 
 {% for section in page.speakers %}
     {% for member in section.members %}
