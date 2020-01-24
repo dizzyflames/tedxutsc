@@ -4,7 +4,7 @@ title: Speaker
 speakers:
   - title: Speakers
     members:
-      - name: Dr. Gerald<br/><br/>Cupchik
+      - name: Dr. Gerald Cupchik
         id: gerald
         position: Professor
         image: assets/speakers/gerald.png
@@ -28,7 +28,7 @@ speakers:
         image: assets/speakers/ehi.png
         bio: > 
             Ehi Ade-Mabo inspires women to live Purposefully and make an impact in the world with Entrepreneurship. Ehi is a Passionate and Inspirational speaker who has built her platform on helping Women develop their Self-Confidence, Overcome Fear and be Profitable. Her message is built on the Premise of Abundance and the Audacity of Belief. Her works have been featured internationally in various platforms such as the Poverty and Social Protection Conference and other initiatives around the world. Her talk will discuss about improving solutions around diversity as it relates to gender disparity in the corporate world.
-      - name: Dr. Michelle<br/><br/>Silver
+      - name: Dr. Michelle Silver
         id: michelle
         position: Professor
         image: assets/speakers/michelle.png
@@ -40,13 +40,13 @@ speakers:
         image: assets/speakers/murray.png
         bio: >
             Murray Calyton spent years excavating 3rd Century Roman burials, and then returned to school to focus on human osteology, social sciences, and getting a Master's in evolutionary anthropology (focussing on forensic anthropology). He currently remains active in the forensic community as the Program Officer for the Forensic Science Program at the University of Toronto Mississauga. His talk will discuss and transfer experiences and lessons learned from forensic science into an ethical toolkit for working professionals which aims to assist individuals, and guide confidence in decision making.
-      - name: Hamayal<br/><br/>Choudhry
+      - name: Hamayal Choudhry
         id: hamayal
         position: CEO
         image: assets/speakers/hamayal.png
         bio: >
             Hamayal Choudhry is the founder and CEO of smartARM (a robotics company creating AI-eqipped bionics for amputees), a multi-award winning social entrepreneur, and a keynote speaker. His passion for technology has led him to work with Tesla, and smartARM has been acclaimed by Forbes, Business Insider, Microsoft, and also by PM Justin Trudeau. Hamayal is also regularly invited worldwide to present keynotes on creating sustainable start-ups that solve meaningful problems, finding purpose-driven work, how to be prepared for the fourth industrial revolution, and more. His talk will discuss remaining relevant in a digital world, and ho to envision oneself in a global society.
-      - name: Sauliha Alli
+      - name: Sauliha Alli  
         id: sauliha
         position: Undergraduate Student
         image: assets/speakers/sauliha.png
@@ -70,7 +70,7 @@ speakers:
         image: assets/speakers/andre.png
         bio: >
             André Vashist is an award winning serial social entrepreneur, emerging systems change innovator and aspiring spiritual ecologist.  As one of the city’s top 20 under 40 and graduate of Waterloo Institute for Social Innovation and Resilience Residency program, André is a cross-sector and cross-cultural facilitator working on bold collaborations in our community. His talk will discuss how teachings from Europe, Asia and Turtle Island can unpack the baggage of our dominant assumptions and make room in our luggage with universal knowledge that nurtures our shared future and home’s wellbeing.
-      - name: Matthew<br/><br/>Hoffman
+      - name: matthew Hoffman
         id: matthew
         position: Professor
         image: assets/speakers/matthew.png
@@ -109,7 +109,7 @@ team:
         image: assets/speakers/jonathan.jpeg
         bio: >
             Jonathan is a Canadian journalist, the current Canadian editor of the online magazine, Quilette; he is also the former editor-in-chief of The Walrus, an accomplished writer, and a decorated alumni at the National Post. He will use the TEDxUTSC platform to discuss the balance of respecting one’s freedom of speech as well as one’s right to not be subject to hate speech.
-      - name: Tahmid Hasib<br/><br/>Khan
+      - name: Tahmid Hasib Khan
         id: tahmid
         position: Global Health Student
         image: assets/speakers/tahmid.jpeg
@@ -158,7 +158,9 @@ team:
                     <div class="team__member-item" style="margin-top: 40px; cursor: pointer;" data-toggle="modal" data-target="#{{member.id}}-speaker-modal">
                         <img src="{{ member.image }}" class="team__picture"/>
                         <div class="team__name-gradient">
-                            <label class="team__member-name">{{ member.name }}</label>
+                            <label class="team__member-name">
+                                {{ member.name }}
+                            </label>
                             <label class="team__member-position">{{ member.position }}</label>
                         </div>
                     </div>
@@ -182,8 +184,8 @@ team:
                 </div>
                 <div class="col-lg-7 col-md-8">
                     <div class="speaker-content">
-                        <label class="sub-section-label">{{member.name}}</label>
-                        <div class="speaker-title">{{member.position}}</div>
+                        <label class="sub-section-label">{{member.position}}</label>
+                        <div class="speaker-title">{{member.name}}</div>
                         <p>{{member.bio}}</p>
                     </div>
                 </div>
