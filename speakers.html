@@ -158,9 +158,7 @@ team:
                     <div class="team__member-item" style="margin-top: 40px; cursor: pointer;" data-toggle="modal" data-target="#{{member.id}}-speaker-modal">
                         <img src="{{ member.image }}" class="team__picture"/>
                         <div class="team__name-gradient">
-                            <label class="team__member-name">
-                                {{ member.name }}
-                            </label>
+                            <label class="team__member-name"> {{ member.name }} </label>
                             <label class="team__member-position">{{ member.position }}</label>
                         </div>
                     </div>
@@ -184,8 +182,8 @@ team:
                 </div>
                 <div class="col-lg-7 col-md-8">
                     <div class="speaker-content">
-                        <label class="sub-section-label">{{member.position}}</label>
-                        <div class="speaker-title">{{member.name}}</div>
+                        <div class="team__bio-name">{{member.name}}</div>
+                        <label class="team__bio-position">{{member.position}}</label>
                         <p>{{member.bio}}</p>
                     </div>
                 </div>
@@ -231,8 +229,8 @@ team:
                 </div>
                 <div class="col-lg-7 col-md-8">
                     <div class="speaker-content">
-                        <label class="sub-section-label">{{member.position}}</label>
-                        <div class="speaker-title">{{member.name}}</div>
+                        <div class="team__bio-name">{{member.name}}</div>
+                        <label class="team__bio-position">{{member.position}}</label>
                         <p>{{member.bio}}</p>
                     </div>
                 </div>
