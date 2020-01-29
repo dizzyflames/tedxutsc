@@ -1,4 +1,4 @@
-<div class="home-gallery" id="home-gallery">
+<!--<div class="home-gallery" id="home-gallery">
     <div class="container">
         <div class="home-gallery__title">
             <button onClick="previousGalleryItem()" class="home-gallery__title__left-btn"></button>
@@ -6,5 +6,27 @@
             <button onClick="nextGalleryItem()" class="home-gallery__title__right-btn"></button>
         </div>
         <br/>
+    </div>
+</div>-->
+
+<div class="home-gallery" id="home-gallery">
+    <div class="container">
+        <div class="home-gallery__title">
+            <button onClick="previousGalleryItem()" class="home-gallery__title__left-btn"></button>
+            <div class="home-gallery__title__content">Our 2020 Speakers</div>
+            <button onClick="nextGalleryItem()" class="home-gallery__title__right-btn"></button>
+        </div>
+        <br/>
+        <ul class="home-gallery__items">
+            {% for speaker in page.gallery %}
+            <li class="home-gallery__items__item">
+                <img class="home-gallery__items__item__img" src="{{ speaker.image }}" alt="{{ speaker.name }}"/>
+                <div class="home-gallery__items__item__label">
+                    <small>{{ speaker.position }}</small>
+                    {{ speaker.name }}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 </div>
